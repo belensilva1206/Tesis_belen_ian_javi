@@ -34,7 +34,18 @@ Los notebooks se guardan **con sus salidas**, para revisar los resultados sin ej
 
 *p corregidos por Holm. n. s. = no significativo.*
 
-- **H1 (C2 supera al modelo sin recuperación):** se confirma en dos subconjuntos independientes.
+### Validación con respuestas de referencia de abogados (v1.1)
+
+Dos abogados respondieron las 45 consultas respondibles del subconjunto v1.1. RAGAS compara cada respuesta del agente con la del experto:
+
+| Métrica (escala 0–100) | C0 | C1 | C2 | C2 vs C0 | C2 vs C1 |
+|---|---|---|---|---|---|
+| Exactitud de la respuesta | 26,4 | 38,6 | 38,7 | +12,3 (p < 0,001) ✅ | +0,1 (p = 0,61) |
+| Retención del contexto | — | 58,4 | 46,8 | — | −11,6 (p = 0,029) |
+
+*Wilcoxon pareado. Resultado preliminar: C1 y C2 tienen n = 38 de 45 porque se agotó la cuota diaria del juez. Las 7 consultas restantes se completarán en la próxima ejecución.*
+
+- **H1 (C2 supera al modelo sin recuperación):** se confirma en dos subconjuntos independientes, también con la exactitud medida contra las respuestas de los abogados.
 - **H2 (la segmentación jerárquica supera a un RAG tradicional):** tendencia favorable, pero no significativa.
 - **Abstención:** solo C2 se abstiene ante consultas fuera del corpus.
 
