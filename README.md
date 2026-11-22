@@ -40,10 +40,10 @@ Dos abogados respondieron las 45 consultas respondibles del subconjunto v1.1. RA
 
 | Métrica (escala 0–100) | C0 | C1 | C2 | C2 vs C0 | C2 vs C1 |
 |---|---|---|---|---|---|
-| Exactitud de la respuesta | 26,4 | 38,6 | 38,7 | +12,3 (p < 0,001) ✅ | +0,1 (p = 0,61) |
-| Retención del contexto | — | 58,4 | 46,8 | — | −11,6 (p = 0,029) |
+| Exactitud de la respuesta | 26,4 | 36,5 | 36,3 | +9,9 (p < 0,001) ✅ | −0,1 (p = 0,52) |
+| Retención del contexto | — | 53,7 | 42,8 | — | −10,9 (p = 0,025) |
 
-*Wilcoxon pareado. Resultado preliminar: C1 y C2 tienen n = 38 de 45 porque se agotó la cuota diaria del juez. Las 7 consultas restantes se completarán en la próxima ejecución.*
+*Medias en escala 0–100, n = 45 consultas por condición. Diferencias: media pareada y prueba de Wilcoxon.*
 
 - **H1 (C2 supera al modelo sin recuperación):** se confirma en dos subconjuntos independientes, también con la exactitud medida contra las respuestas de los abogados.
 - **H2 (la segmentación jerárquica supera a un RAG tradicional):** tendencia favorable, pero no significativa.
